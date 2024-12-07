@@ -35,7 +35,7 @@ button.addEventListener('click', (event) => {
 
     // Navigate to the next page after the sound ends
     buttonAudio.addEventListener('ended', () => {
-        window.location.href = "game1.html";
+        window.location.href = "/Clever-Captives/game1.html";
     });
 });
 
