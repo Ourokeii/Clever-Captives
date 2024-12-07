@@ -25,7 +25,7 @@ function checkDoorCode() {
         document.getElementById("doorTitle").innerText = "The door is unlocked";
         document.getElementById("doorResult").innerText = "The passcode is correct";
 
-        window.location.href = "http://127.0.0.1:5500/2ndroompt1.html#";
+        window.location.href = "/Clever-Captives/2ndroompt1.html";
     } else {
         document.getElementById("doorTitle").innerText = "The door is still locked";
         document.getElementById("doorResult").innerText = "Incorrect";
