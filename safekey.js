@@ -8,8 +8,8 @@ function toggleSafePopup() {
 
         setTimeout(() => {
             popup.style.visibility = "hidden";
-            // Redirect to a new page after closing the popup
-            window.location.href = "http://127.0.0.1:5500/doorsafeopen.html"; // Replace with your desired URL
+            
+            window.location.href = "/Clever-Captives/doorsafeopen.html";
         }, 500); 
     } else {
         popup.style.visibility = "visible";
