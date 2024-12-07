@@ -26,7 +26,7 @@ function checkSafeCode() {
         document.getElementById("SafeResult").innerText = "The first part of the code is: A01";
 
         // Redirect to the new page
-        window.location.href = "http://127.0.0.1:5500/safekey.html";
+        window.location.href = "/Clever-Captives/safekey.html";
     } else {
         // Indicate incorrect input
         document.getElementById("SafeResult").innerText = "Incorrect";
