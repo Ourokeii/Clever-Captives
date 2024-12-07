@@ -39,5 +39,5 @@ function closeSecondPopup() {
     blur.classList.remove("active");
     popup2.style.visibility = "hidden";
 
-    window.location.href = "http://127.0.0.1:5500/safedoor.html#";
+    window.location.href = "/Clever-Captives/safedoor.html";
 }
