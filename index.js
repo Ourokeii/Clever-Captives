@@ -35,7 +35,7 @@ button.addEventListener('click', (event) => {
 
     // Navigate to the next page after the sound ends
     buttonAudio.addEventListener('ended', () => {
-        window.location.href = "http://127.0.0.1:5500/game1.html";
+        window.location.href = "game1.html";
     });
 });
 
