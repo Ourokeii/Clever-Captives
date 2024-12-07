@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>The First Door</title>
+    <link rel="stylesheet" href="safedoor.css">
+</head>
+<body>
+
+    <a href="#" onclick="toggleDoorPopup()">
+        <img id="door" class = "door" src="door.png" alt="door">
+        </a>
+
+        <div class="container" id="blurDoor"></div>
+        <div id="popupDoor" class="popup">
+
+             <h1 id="doorTitle">The Door is locked!</h1>
+            
+            <label>Enter Passcode:</label><br>
+            <input type="text" id="doorText" placeholder="Enter passcode"><br><br>
+            <div id="doorResult"></div><br>
+            <button onclick="checkDoorCode()">Submit</button> 
+            <br><br>
+          <button class="btn2" onclick="toggleDoorPopup()">Close</button> 
+        
+        </div>
+
+        <a href="#" onclick="toggleGlobePopup()">
+            <img id= "globe" class="globe" src="globe2.png" alt="globe">
+            </a>
+    
+            <div class="container" id="blurGlobe"></div>
+            <div id="popupGlobe" class="popup">
+                
+                    <h2 id="globeTitle">Its just a globe.....</h2>
+    
+                 <button class="btn2" onclick="toggleGlobePopup()">Close</button>
+                 
+            </div>
+            
+            <a href="#" onclick="toggleNotePopup()">
+                <img id= "note" class="note" src="notesdark.png" alt="notes">
+                </a>
+        
+                <div class="container" id="blurNote"></div>
+                <div id="popupNote" class="popup">
+                    <h2 id="noteTitle">There is a note on the wall</h2>
+    
+                    <div class="image-content">
+                        <img id="note2" src="notefront.png" alt="Note on the globe" >
+                    </div>
+    
+                    <label>Answer:</label>
+                    <input type="text" id="noteText" placeholder="Enter answer"><br><br>
+                    <div id="noteResult"></div><br>
+                    <button onclick="checkNoteCode()">Submit</button>
+                    <br><br>
+                    <button class="btn2" onclick="toggleNotePopup()">Close</button>
+                </div>
+        
+            <a href="http://127.0.0.1:5500/paintingopen.html" >
+            <img id= "painting" class="painting" src="safe2.png" alt="painting">
+            </a>
+            
+            <audio id="bgMusic" src="Horror Ambiance.mp3" loop autoplay></audio>
+
+        <script src="safedoor.js"></script>
+
+</body>
+</html>
