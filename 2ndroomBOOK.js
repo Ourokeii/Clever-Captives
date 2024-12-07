@@ -9,16 +9,12 @@ function toggleSafePopup() {
         popup.classList.remove("active");
         blur.classList.remove("active");
 
-        // Change the background image when closing the popup
         document.body.style.backgroundImage = "url('magnifybook.png')";
 
-        // Hide the smallquestion.png image
         questionImage.style.display = "none";
 
-        // Make the "Back" button visible
         backButton.style.visibility = "visible";
 
-        // Make the bookquestion.png image visible
         bookQuestionImage.style.display = "block";
 
         setTimeout(() => {
@@ -29,10 +25,8 @@ function toggleSafePopup() {
         popup.classList.add("active");
         blur.classList.add("active");
 
-        // Show the smallquestion.png image again when opening the popup
         questionImage.style.display = "block";
 
-        // Hide the "Back" button and bookquestion.png image when opening the popup
         backButton.style.visibility = "hidden";
         bookQuestionImage.style.display = "none";
     }
