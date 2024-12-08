@@ -17,18 +17,17 @@ function toggleSafePopup() {
 }
 
 function checkSafeCode() {
-    const correctAnswer = 10; // The correct answer to check
-    const answerSafe = Number(document.getElementById("SafeText").value); // User input converted to a number
+    const correctAnswer = "(2x-1)²/3+1"; 
+    const answerSafe = document.getElementById("SafeText").value.trim(); 
 
     if (answerSafe === correctAnswer) {
-        // Update the title and result to indicate success
+       
         document.getElementById("SafeTitle").innerText = "The Answer is correct";
         document.getElementById("SafeResult").innerText = "The first part of the code is: A01";
 
-        // Redirect to the new page
         window.location.href = "/Clever-Captives/safekey.html";
     } else {
-        // Indicate incorrect input
+       
         document.getElementById("SafeResult").innerText = "Incorrect";
     }
 }
