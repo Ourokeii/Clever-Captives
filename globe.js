@@ -72,7 +72,7 @@ function toggleGlobePopup() {
     }
     
     function checkNoteCode() {
-        const correctNoteCode = "10"; 
+        const correctNoteCode = "405"; 
         const answerNote = document.getElementById("noteText").value;
     
         if (answerNote === correctNoteCode) {
